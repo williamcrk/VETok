@@ -106,7 +106,7 @@ const AgendaDragDrop = () => {
         .from('appointments')
         .select(`
           *,
-          pets (
+          pets!appointments_pet_id_fkey (
             *,
             tutores (*)
           )

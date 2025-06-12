@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import PageLayout from '@/components/PageLayout';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -86,7 +85,7 @@ const Dashboard = () => {
           id,
           appointment_date,
           service_type,
-          pets (name, especie),
+          pets!appointments_pet_id_fkey (name, especie),
           tutores (nome)
         `)
         .eq('status', 'scheduled')
