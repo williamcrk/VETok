@@ -86,7 +86,7 @@ const Dashboard = () => {
           appointment_date,
           service_type,
           pets!appointments_pet_id_fkey (name, especie),
-          tutores (nome)
+          tutores!appointments_tutor_id_fkey (nome)
         `)
         .eq('status', 'scheduled')
         .gte('appointment_date', new Date().toISOString())
